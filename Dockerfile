@@ -6,7 +6,7 @@ FROM alpine:3.12.0
 LABEL maintainer="Gerben Geijteman <gerben@hyperized.net>"
 LABEL description="HTML Tidy in an Alpine container"
 
-RUN apk --no-cache add tidyhtml
+RUN apk --no-cache add tidyhtml findutils
 
 ENTRYPOINT ["/usr/bin/tidy"]
 
